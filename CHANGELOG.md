@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-11-14
+
+### Added
+- Eval harness with 3 test cases
+- Hard EV example for Pakistan 2030
+- run-task updated for independent-first debate and best-point scoring
+
+### Fixed
+- CHANGELOG duplicate Added section
+- CONTRIBUTING rule count (6 to 7 parts)
+- EV example citations (S8 removed, C11 corrected, duplicate text removed)
+
 ## [0.1.0] - 2026-11-14
 
 ### Added

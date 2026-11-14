@@ -1,6 +1,6 @@
 {
   "name": "universal-agents",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Universal Multi-Agent Intelligence System — a multi-stage reasoning pipeline of agents and skills.",
   "author": {
     "name": "Vkyrie"
