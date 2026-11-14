@@ -23,5 +23,4 @@ Entry point for the Universal Multi-Agent Intelligence System.
 
 ## Stage 1 note
 
-In Stage 1 this command is a **specification only** — the agents and skills it
-references are not yet written. It documents the intended entry point.
+In Stage 1 this command is a specification — the agents and skills it references are defined in this repo, but there is no runtime to execute them automatically.
