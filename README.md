@@ -99,3 +99,8 @@ See [docs/examples/](docs/examples/) for three full pipeline runs:
 ## License
 
 MIT — see LICENSE.
+
+## Community
+
+- [CHANGELOG.md](CHANGELOG.md) — version history
+- [CONTRIBUTING.md](CONTRIBUTING.md) — how to contribute
