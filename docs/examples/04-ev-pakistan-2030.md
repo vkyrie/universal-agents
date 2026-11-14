@@ -36,9 +36,9 @@
 | C6: Punjab EV Policy 2022 targets 30% of new vehicle registrations electric by 2030. | S5 (Punjab EV Policy) | "Target 30% of new vehicle registrations to be electric by 2030." | REPORTED |
 | C7: Local 2/3-wheeler EV assembly exists (Jolta, Evee, etc.). | S6 (Company websites) | Jolta: "First locally manufactured electric motorcycle"; Evee: "Pakistan's first electric scooter." | REPORTED |
 | C8: Pakistan's gasoline price ~PKR 260-280/L; electricity for charging ~PKR 15-20/kWh (off-peak). | S3/S4 (NEPRA/World Bank) | "Off-peak tariff Rs. 15.5/kWh; petrol Rs. 272/L." | REPORTED |
-| C9: EV 2/3-wheelers have ~70% lower operating cost per km vs. petrol. | S1 (IEA) / S8 (calculated) | "EVs have 50-70% lower operating costs per km." | REPORTED |
+| C9: EV 2/3-wheelers have ~70% lower operating cost per km vs. petrol. | S1 (IEA) | "EVs have 50-70% lower operating costs per km." | REPORTED |
 | C10: Pakistan's charging infrastructure: <500 public chargers nationwide (2023). | S1 (IEA) / S5 (Punjab Policy) | "Public charging infrastructure remains minimal." | REPORTED |
-| C11: Pakistan's average car price ~PKR 3-5M; EV import duties ~50-100% before exemptions. | S2 (Pakistan Economic Survey) / S5 (Punjab Policy) | "Customs duty on EV imports reduced to 1% for CBU, 0% for CKD." | REPORTED |
+| C11: EV import duties reduced to 1% for CBU, 0% for CKD under Punjab EV Policy. | S5 (Punjab Policy) | "Customs duty on EV imports reduced to 1% for CBU, 0% for CKD." | REPORTED |
 
 **Coverage note:** No Pakistan-specific grid capacity study for mass EV adoption retrieved. No primary cost-benefit analysis for 30% target retrieved. All claims REPORTED; no CONFIRMED claims (no primary Pakistan-specific study retrieved and checked).
 
@@ -61,7 +61,7 @@
 | ID | Assumption / Gap / Alternative | Severity |
 |----|--------------------------------|----------|
 | A1 | **"30% target" treats all segments equally.** Cars, 2/3-wheelers, and buses have vastly different economics and infrastructure needs. A single target is incoherent. | CRITICAL |
-| A2 | **No Pakistan-specific grid integration study.** Global IEA data does not capture Pakistan's circular debt, circular debt, seasonal hydro, or T&D losses. | CRITICAL |
+| A2 | **No Pakistan-specific grid integration study.** Global IEA data does not capture Pakistan's circular debt, seasonal hydro, or T&D losses. | CRITICAL |
 | A3 | **"30% by 2030" origin unclear.** Punjab policy cites it; federal policy less specific. No cost-benefit analysis retrieved for the 30% number itself. | HIGH |
 | A4 | **Cost projections from global data.** IEA operating cost savings (50-70%) based on OECD electricity/gas prices; Pakistan's off-peak vs. petrol economics differ. | HIGH |
 | A5 | **Policy stability risk.** Pakistan's policy reversals (solar net metering, EV duty changes) make long-term planning uncertain. | MODERATE |
