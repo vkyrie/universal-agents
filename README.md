@@ -88,3 +88,7 @@ To run a task once the agents and skills exist:
 ```text
 /universal-agents run "<your task>"
 ```
+
+## License
+
+MIT — see LICENSE.
