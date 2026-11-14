@@ -78,8 +78,7 @@ Orchestrator ─► packages and returns
 
 ## Stage 1 scope
 
-Stage 1 is **structure only** — no agent or skill content, no runtime, no
-run-state store. See `docs/pipeline.md` for what is deliberately not built.
+Stage 1 is complete — 7 agents, 9 skills, 3 rules, and 1 command are defined, with MIT LICENSE. No runtime, no live tool wiring, no memory/persistence, no UI.
 
 ## Usage
 
@@ -88,6 +87,11 @@ To run a task once the agents and skills exist:
 ```text
 /universal-agents run "<your task>"
 ```
+
+See [docs/examples/](docs/examples/) for three full pipeline runs:
+- [01-great-wall-visible-from-space.md](docs/examples/01-great-wall-visible-from-space.md)
+- [02-small-shop-selling-online.md](docs/examples/02-small-shop-selling-online.md)
+- [03-python-vs-javascript-beginner.md](docs/examples/03-python-vs-javascript-beginner.md)
 
 ## License
 

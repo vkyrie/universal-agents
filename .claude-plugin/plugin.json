@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "Universal Multi-Agent Intelligence System — a multi-stage reasoning pipeline of agents and skills.",
   "author": {
-    "name": "universal-agents"
+    "name": "Vkyrie"
   },
-  "repository": "https://github.com/universal-agents/universal-agents",
+  "repository": "https://github.com/Vkyrie/universal-agents",
   "keywords": ["agents", "skills", "reasoning", "pipeline", "multi-agent"],
   "contributes": {
     "agents": "./.claude/agents",
