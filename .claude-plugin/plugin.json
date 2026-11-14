@@ -1,0 +1,15 @@
+{
+  "name": "universal-agents",
+  "version": "0.1.0",
+  "description": "Universal Multi-Agent Intelligence System — a multi-stage reasoning pipeline of agents and skills.",
+  "author": {
+    "name": "universal-agents"
+  },
+  "repository": "https://github.com/universal-agents/universal-agents",
+  "keywords": ["agents", "skills", "reasoning", "pipeline", "multi-agent"],
+  "contributes": {
+    "agents": "./.claude/agents",
+    "skills": "./.claude/skills",
+    "commands": "./.claude/commands"
+  }
+}

@@ -1,0 +1,37 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Scratch / local state
+*.log
+scratch/
+tmp/
+secrets/
+.env
+.env.*
+!.env.example
+
+# Generated run state (Stage 2+)
+runs/
+*.run.json
+*.run.md

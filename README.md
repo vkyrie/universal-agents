@@ -1,0 +1,90 @@
+# Universal Multi-Agent Intelligence System
+
+A GitHub-style repository of **agents** and **skills** that work together as a
+multi-stage reasoning pipeline. Inspired by ECC's agent/skill/command layout.
+
+## What this is
+
+A specification-first system. A user gives a task, and a chain of specialized
+agents reasons through it — decomposing, researching, stress-testing, verifying,
+debating, and finally deciding — rather than one model answering in a single pass.
+
+## Layout
+
+```
+universal-agents/
+├── README.md
+├── CLAUDE.md
+├── .gitignore
+├── .claude-plugin/plugin.json
+├── .claude/                 # Claude Code native layout (loadable)
+│   ├── agents/              # agent definitions, loadable by Claude Code
+│   ├── skills/              # skills, loadable by Claude Code
+│   ├── commands/            # slash commands, loadable by Claude Code
+│   └── rules/               # standing constraints, loadable by Claude Code
+├── agents/                  # SOURCE OF TRUTH for agent definitions
+├── skills/                  # SOURCE OF TRUTH for skill definitions
+├── commands/                # SOURCE OF TRUTH for command definitions
+├── rules/                   # standing constraints the whole system obeys
+└── docs/
+    └── pipeline.md          # the workflow spec: stages, contracts, handoffs
+```
+
+## Source of truth
+
+**Top-level `agents/`, `skills/`, and `commands/` are the source of truth.**
+
+`.claude/agents/`, `.claude/skills/`, `.claude/commands/`, and `.claude/rules/`
+are the Claude Code native layout — the same content, mirrored so the repo is
+loadable directly by Claude Code without any install step. When they differ, the
+top-level folders win; the `.claude/` copies should be regenerated from them.
+
+`.claude-plugin/plugin.json` declares the plugin so the package is recognized.
+
+## The pipeline
+
+```
+user task
+   │
+   ▼
+Orchestrator ──► decomposes, sets the confidence bar, owns the run
+   │
+   ├──► Research ──────► raw findings + source list
+   ├──► Domain Expert ──► plausibility read on those findings
+   │         │
+   ▼         ▼
+Critical Thinking ─► assumptions, gaps, alternatives
+   │
+   ▼
+Fact-Checking ─► verified claims, corrections, debunked items
+   │
+   ▼
+Debate ─► pro/con rounds, strongest-argument record
+   │
+   ▼
+Final Decision ─► verdict, confidence, uncertainty, recommendation
+   │
+   ▼
+Orchestrator ─► packages and returns
+```
+
+- Research and Domain Expert run concurrently off the same brief.
+- Critical Thinking consumes both.
+- Fact-Checking and Debate follow sequentially.
+- Final Decision closes the loop.
+- Orchestrator is the only stateful owner and can re-dispatch a stage if a later
+  stage invalidates it (e.g. Fact-Checking debunks a load-bearing claim, so
+  Critical Thinking re-runs on the remainder).
+
+## Stage 1 scope
+
+Stage 1 is **structure only** — no agent or skill content, no runtime, no
+run-state store. See `docs/pipeline.md` for what is deliberately not built.
+
+## Usage
+
+To run a task once the agents and skills exist:
+
+```text
+/universal-agents run "<your task>"
+```
