@@ -1,0 +1,16 @@
+{
+  "name": "universal-agents",
+  "owner": {
+    "name": "Vkyrie"
+  },
+  "metadata": {
+    "description": "Universal Multi-Agent Intelligence System — 7 agents, 9 skills, one evidence-based answer."
+  },
+  "plugins": [
+    {
+      "name": "universal-agents",
+      "source": "./",
+      "description": "Universal Multi-Agent Intelligence System — a multi-stage reasoning pipeline of agents and skills."
+    }
+  ]
+}
