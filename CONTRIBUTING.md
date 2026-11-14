@@ -10,7 +10,7 @@ Thank you for your interest in contributing! This document explains how to propo
    - YAML frontmatter with required fields
    - The six sections for agents (role summary, input contract, output contract, operating instructions, handoff protocol, escalation rules)
    - The four sections for skills (purpose, step-by-step procedure, output format spec, failure modes)
-   - The six sections for rules (purpose, rule in one sentence, what is forbidden, what to do instead, violation example, correct-behaviour example, enforcing agent)
+   - The seven parts for rules: purpose, rule in one sentence, what is forbidden, what to do instead, violation example, correct-behaviour example, enforcing agent
 4. **Mirror the change.** If you add or change a file in the top-level `agents/`, `skills/`, `commands/`, or `rules/` folder, you must also copy it byte-identically to the corresponding `.claude/` subfolder. The top-level folders are the source of truth.
 
 ## Repository Rules
