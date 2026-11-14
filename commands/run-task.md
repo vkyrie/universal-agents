@@ -17,9 +17,12 @@ Entry point for the Universal Multi-Agent Intelligence System.
 1. Receives the user's task.
 2. Hands it to the **Orchestrator** agent.
 3. Orchestrator decomposes the task, sets the confidence bar, and owns the run.
-4. The pipeline executes: Research + Domain Expert (concurrent) → Critical
-   Thinking → Fact-Checking → Debate → Final Decision.
-5. Orchestrator packages the result and returns it to the user.
+4. The pipeline executes: Research + Domain Expert work independently first → Critical
+   Thinking → Fact-Checking → Debate with Best-Point Scoring 0-8 → Final Decision
+   from highest-scoring verified points.
+5. Confidence scores are hidden until all agents have voted. Debate is capped at
+   2 rounds. Dissent is kept verbatim.
+6. Orchestrator packages the result and returns it to the user.
 
 ## Stage 1 note
 
