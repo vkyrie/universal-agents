@@ -104,3 +104,4 @@ MIT — see LICENSE.
 
 - [CHANGELOG.md](CHANGELOG.md) — version history
 - [CONTRIBUTING.md](CONTRIBUTING.md) — how to contribute
+- [evals/README.md](evals/README.md) — eval harness and test cases
