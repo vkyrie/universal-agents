@@ -68,6 +68,9 @@ Final Decision ─► verdict, confidence, uncertainty, recommendation
 Orchestrator ─► packages and returns
 ```
 
+- **Independent first, then debate.** Every agent works independently without seeing other agents' conclusions or confidence scores; confidence hidden until all vote.
+- **Cross-scoring + reveal round + Anti-Sycophancy Guard + Devil's Advocate.** Points scored 0–8 (evidence strength, source credibility, logical soundness, survived Fact-Checking); no retrievable URL = max 2; unanimous verdicts challenged; debate capped at 2 rounds; dissent kept verbatim.
+- **Best-scoring points win.** The final answer is built only from the highest-scoring verified points, not from vote counts or majority agreement.
 - Research and Domain Expert run concurrently off the same brief.
 - Critical Thinking consumes both.
 - Fact-Checking and Debate follow sequentially.
@@ -78,7 +81,7 @@ Orchestrator ─► packages and returns
 
 ## Stage 1 scope
 
-Stage 1 is complete — 7 agents, 9 skills, 3 rules, and 1 command are defined, with MIT LICENSE. No runtime, no live tool wiring, no memory/persistence, no UI.
+Stage 1 is complete — 7 agents, 9 skills, 4 rules, and 1 command are defined, with MIT LICENSE. No runtime, no live tool wiring, no memory/persistence, no UI.
 
 ## Usage
 

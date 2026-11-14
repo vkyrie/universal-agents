@@ -5,20 +5,7 @@ contracts, and handoffs between agents.
 
 ## Stage 1 scope
 
-Stage 1 is **structure only**:
-
-- Repo layout, agent/skill/command/rules folders, README, CLAUDE.md, .gitignore.
-- This document: the pipeline spec.
-
-Stage 1 deliberately does **not** include:
-
-- Agent definitions or skill content (the 7 agents and 9 skills are planned, not written).
-- A runtime or execution engine — agents are specifications, not programs.
-- Live tool wiring (no search API, no browser, no actual retrieval).
-- A run-state store, memory, or persistence layer.
-- An eval harness, CI, or benchmark suite.
-- A UI, installable package, or distribution scripts.
-- The `status` command — there is no run-state store to inspect yet.
+Stage 1 is complete — 7 agents, 9 skills, 4 rules, and 1 command are defined, with MIT LICENSE. Stage 1 deliberately does NOT include: a runtime or execution engine, live tool wiring, a run-state store, memory, an eval harness, CI, a UI, or installable package.
 
 ## The pipeline
 
@@ -49,6 +36,17 @@ Orchestrator ─► packages and returns
 
 ## Execution rules
 
+- **Agents work independently first, then debate together.** Each agent forms its
+  own judgment using only its own role and skills before any outputs are shared.
+  Confidence scores are hidden until all agents have voted — see
+  `rules/independent-first.md`.
+- The final answer is built from the **highest-scoring verified points** —
+  points scored 0–8 on evidence strength, source credibility, logical soundness,
+  and whether they survived Fact-Checking — not from the most-agreed points.
+- **Cross-scoring + mandatory reveal round + Anti-Sycophancy Guard + Devil's
+  Advocate.** Every point is scored; confidence scores revealed simultaneously
+  only after all votes; unanimous verdicts must be challenged; debate capped at
+  2 rounds; dissent kept verbatim.
 - Research and Domain Expert run **concurrently** off the same brief.
 - Critical Thinking consumes both of their outputs.
 - Fact-Checking and Debate are **sequential** after Critical Thinking.
@@ -59,7 +57,7 @@ Orchestrator ─► packages and returns
 
 ## Agent contracts
 
-Each agent file (planned for Stage 2) defines:
+Each agent file (defined in this repo) defines:
 
 - `name`, `description`, `triggers`, `model`, `tools` (frontmatter)
 - Role summary
@@ -71,7 +69,7 @@ Each agent file (planned for Stage 2) defines:
 
 ## Skill contracts
 
-Each skill file (planned for Stage 2) defines:
+Each skill file (defined in this repo) defines:
 
 - `name`, `description`, `inputs`, `outputs` (frontmatter)
 - Purpose
