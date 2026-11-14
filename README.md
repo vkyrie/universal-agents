@@ -91,10 +91,11 @@ To run a task once the agents and skills exist:
 /universal-agents run "<your task>"
 ```
 
-See [docs/examples/](docs/examples/) for three full pipeline runs:
+See [docs/examples/](docs/examples/) for four full pipeline runs:
 - [01-great-wall-visible-from-space.md](docs/examples/01-great-wall-visible-from-space.md)
 - [02-small-shop-selling-online.md](docs/examples/02-small-shop-selling-online.md)
 - [03-python-vs-javascript-beginner.md](docs/examples/03-python-vs-javascript-beginner.md)
+- [04-ev-pakistan-2030.md](docs/examples/04-ev-pakistan-2030.md)
 
 ## License
 
